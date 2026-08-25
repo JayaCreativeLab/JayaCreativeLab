@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Creative Lab | Link Navigasi</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Background Gradasi Elegan - Ditarik sedikit lagi ke atas */
+        body {
+            background: linear-gradient(to bottom right, #0d1117, #161b22, #0d1117);
+            background-attachment: fixed;
+            color: #f3f4f6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 16px 14px 36px 14px; /* Padding atas diperkecil sedikit agar card naik, bawah dilebarin buat footer */
+            overflow-x: hidden;
+        }
+
+        /* Bingkai Kartu Utama */
+        .container {
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            padding: 36px 22px;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+            margin-bottom: 24px; /* Jarak dari card ke footer luar sedikit dijauhkan */
+        }
+
+        /* Logo Bulat Sempurna */
+        .profile-img-wrapper {
+            position: relative;
+            width: 104px;
+            height: 104px;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #1f2937;
+            display: block;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        p.bio {
+            font-size: 14.5px;
+            color: #d1d5db;
+            margin-bottom: 32px;
+            line-height: 1.5;
+            max-width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Tombol Navigasi Utama */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #1f2937;
+            color: #ffffff;
+            padding: 16px 22px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15.5px;
+            border: 1px solid rgba(255,255,255,0.06);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+
+        .btn i {
+            font-size: 19px;
+            margin-right: 16px;
+            color: #3b82f6;
+            width: 24px;
+            text-align: center;
+        }
+
+        /* Efek Hover Tombol */
+        .btn:hover {
+            background-color: #2563eb;
+            border-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+        }
+        
+        .btn:hover i {
+            color: #ffffff;
+        }
+
+        /* Ikon Sosmed Bawah */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icon-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: #1f2937;
+            color: #9ca3af;
+            border: 1px solid rgba(255,255,255,0.06);
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon-btn:hover {
+            background-color: #3b82f6;
+            color: #ffffff;
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+        }
+
+        /* Footer Eksternal */
+        .footer {
+            font-size: 8px;
+            color: #9ca3af;
+            font-weight: 400;
+            opacity: 0.5;
+            text-align: center;
+        }
+
+        /* Penyesuaian layar sangat kecil */
+        @media (max-width: 380px) {
+            body { padding: 12px 12px 28px 12px; }
+            .container { padding: 28px 16px; margin-bottom: 20px; }
+            .btn { padding: 14px 18px; font-size: 14.5px; }
+            h1 { font-size: 23px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- FOTO PROFIL / LOGO -->
+        <div class="profile-img-wrapper">
+            <!-- Ganti URL di bawah dengan link foto profil/logo lu -->
+            <img src="JAYA 1 JPG.jpg" alt="Jaya Creative Lab" class="profile-img">
+        </div>
+        
+        <h1>JayaCreativeLab</h1>
+        <p class="bio"> Desain Grafis • Jasa Joki • Digital Kreatif</p>
+
+        <!-- TOMBOL UTAMA -->
+        <div class="links">
+            <a href="https://wa.me/6281413249259?text=Halo%20Kak%20Jaya,%20spill%20dong%20pricelist%20sama%20layanan%20apa%20aja%20yang%20tersedia%20di%20JayaCreativeLab.%20Mau%20tanya-tanya%20dulu%20nih!" class="btn" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp (Order Cepat)
+</a>
+            <a href="https://ig.me/m/jaya.creativelab" class="btn" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Langsung DM Instagram
+            </a>
+            <a href="https://instagram.com/jaya.creativelab" class="btn" target="_blank">
+                <i class="fa-solid fa-folder-open"></i> Cek Portofolio & Karya
+            </a>
+        </div>
+
+        <!-- IKON SOSIAL MEDIA BAWAH -->
+        <div class="social-icons">
+            <a href="https://instagram.com/jaya.creativelab" class="social-icon-btn" target="_blank" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/6281413249259?text=Halo%20Kak%20Jaya,%20spill%20dong%20pricelist%20sama%20layanan%20apa%20aja%20yang%20tersedia%20di%20JayaCreativeLab.%20Mau%20tanya-tanya%20dulu%20nih!" class="social-icon-btn" target="_blank" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://tiktok.com/@siapjamsut" class="social-icon-btn" target="_blank" title="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER DI LUAR BINGKAI UTAMA -->
+    <div class="footer">
+        &copy; 2026 JayaCreativeLab. All Rights Reserved.
+    </div>
+
+</body>
+</html>
